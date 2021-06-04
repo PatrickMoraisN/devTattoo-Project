@@ -116,6 +116,7 @@ section {
   min-height: 90vh;
   width: 100%;
   text-align: center;
+  background-color: whitesmoke;
 }
 
 #sobre {
@@ -143,7 +144,7 @@ section {
 
 .text-content {
   width: 60%;
-  margin-top: 5rem;
+  margin-top: 2rem;
   color: rgb(78, 78, 78);
   text-align: left;
   padding: 5rem;
@@ -245,6 +246,7 @@ section {
 #orcamento {
   text-align: center;
   padding: 0 5rem;
+  background: linear-gradient(rgb(226, 226, 226), whitesmoke);
 }
 
 .num {
@@ -254,6 +256,78 @@ section {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+}
+
+.text-contato {
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+input, textarea, button {
+  margin-top: 1.4rem;
+  width: 60%;
+  text-align: center;
+  height: 2rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+textarea {
+  height: 10rem;
+}
+
+button {
+  background: linear-gradient(rgb(27, 21, 82), rgb(48, 45, 92));
+  color: rgb(226, 226, 226);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wpp, .text-wpp {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  margin-top: 0rem;
+}
+
+.text-wpp {
+  display: flex;
+  align-items: center;
+}
+
+.wpp-btn {
+  background: rgb(47, 47, 47);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  border: 3px solid rgb(47, 47, 47);
+  transition: 0.2s;
+}
+
+.insta {
+  background: linear-gradient(to right, rgba(128, 0, 128, 0.87), rgba(0, 0, 255, 0.726), rgba(255, 166, 0, 0.692));
+}
+
+.insta:hover {
+  background: whitesmoke;
+}
+
+.wpp-btn:hover {
+  background-color: whitesmoke;
+  color: rgb(47, 47, 47);
 }
 
 @keyframes seta{
