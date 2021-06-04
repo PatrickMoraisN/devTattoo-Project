@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #navbar-logo {
@@ -25,6 +26,10 @@
   background-color: rgb(46, 46, 46);
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .navbar {
@@ -62,9 +67,72 @@ a:hover {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 768px) {
+
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.055), black), url('../imgs/clem-onojeghuo-8soQzdz9XXA-unsplash.jpg');
+  width: 100%;
+  height: 90vh;
+  margin-top: 80px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 10rem;
+  padding: 5rem;
+  color: white;
+  font-size: 4.8rem;
+  line-height: 8rem;
+  max-width: 80%;
+  z-index: 1;
+}
+
+#btn-content {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 5px;
+  background: linear-gradient(rgb(32, 32, 32), rgb(39, 39, 39));
+  outline: none;
+  border: 0;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.seta { 
+  font-size: 3rem;
+  margin-left: 15px;
+  animation: seta 1.5s infinite;
+}
+
+@keyframes seta{
+  0%{
+    transform: translateX(-10px);
+  }
+  50%{
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .nav-container {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .banner-content {
+    font-size: 3rem;
+    line-height: 5rem;
   }
 
   .navbar-menu {
@@ -89,12 +157,14 @@ a:hover {
     left: 0;
     opacity: 1;
     transition: 0.3s;
+    z-index: 999;
   }
 
   .menu-toggle .bar {
     display: block;
     opacity: 1;
     pointer-events: auto;
+    z-index: 999;
   }
 
   #mobile-menu {
@@ -102,6 +172,7 @@ a:hover {
     top: 20%;
     right: 5%;
     cursor: pointer;
+    z-index: 999;
   }
 
   #mobile-menu.is-active .bar:nth-child(2){
