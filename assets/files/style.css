@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar-logo {
+  font-family: 'Odibee Sans', cursive;
+  font-size: 3rem;
+  color: rgb(219, 219, 219);
+  cursor: pointer;
+}
+
+.navbar-links, .navbar-menu {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(219, 219, 219);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(46, 46, 46);
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  width: 90%;
+  max-width: 1720px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  width: auto;
+}
+
+li {
+  margin-right: 20px;
+}
