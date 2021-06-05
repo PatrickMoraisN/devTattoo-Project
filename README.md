@@ -32,7 +32,7 @@ See online at https://patrickmoraisn.github.io/devTattoo-Project/
 
 ---
 
-# :rocket: Tecnologias Usadas
+# :rocket: Technologies
 
 This project was developed with the following technologies: <br>
 
