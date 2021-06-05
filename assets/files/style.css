@@ -348,7 +348,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 80vh;
+  min-height: auto;
 }
 
 .rating img {
