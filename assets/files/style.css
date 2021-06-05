@@ -51,9 +51,9 @@ li {
 }
 
 a:hover {
-  color: rgb(240, 59, 59);
+  color: rgb(250, 250, 250);
   transition: 0.3s;
-  border-bottom: 1px solid rgb(240, 59, 59);
+  border-bottom: 1px solid rgb(250, 250, 250);
 }
 
 .menu-toggle .bar {
@@ -103,6 +103,7 @@ a:hover {
 
 .btn-container {
   display: flex;
+  align-items: center;
 }
 
 .seta { 
@@ -328,6 +329,88 @@ button {
 .wpp-btn:hover {
   background-color: whitesmoke;
   color: rgb(47, 47, 47);
+}
+
+.text-feed {
+  padding-top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.rating img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.rating {
+  flex: 1;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px 5px;
+}
+
+.rating small {
+  color: rgb(116, 116, 116);
+}
+
+.rating:hover, .rating.active {
+  border-radius: 4px;
+  box-shadow: 0 0 10px black;
+}
+
+.rating:hover small, .rating.active small {
+  color: rgb(46, 46, 46);
+}
+
+.painel-container {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 4px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.painel-container strong {
+  line-height: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.send {
+  background-color: #302b2b;
+}
+
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+footer {
+  height: 8rem;
+  font-size: 2rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background: linear-gradient(rgb(39, 39, 39), rgb(26, 26, 26));
 }
 
 @keyframes seta{
