@@ -26,7 +26,8 @@
 
 # :monocle_face: About
 
-This project was developed with the intention of being a modern responsive landing page, with gallery and feedback system.
+This project was developed with the intention of being a modern responsive landing page, with gallery and feedback system.<br><br>
+See online at https://patrickmoraisn.github.io/devTattoo-Project/
 <br />
 
 ---
