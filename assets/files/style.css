@@ -278,7 +278,7 @@ form {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 0;
 }
 
 input, textarea, button {
@@ -410,8 +410,10 @@ button {
 }
 
 footer {
-  height: 8rem;
-  font-size: 2rem;
+  height: 6rem;
+  font-size: 1.2rem;
+  margin-top: 6rem;
+  width: 100%;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -530,6 +532,9 @@ footer {
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  form {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -558,7 +563,7 @@ footer {
     width: 400px;
   }
   footer {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -571,7 +576,7 @@ footer {
     font-size: 2.6rem;
   }
   .text-content {
-    width: 80%;
+    width: 100%;
   }
   .pictures img{
     width: 14rem;
@@ -579,6 +584,10 @@ footer {
   }
   .text-galeria {
     width: 100%;
+  }
+  .text-contato {
+    margin: 0;
+    text-align: center;
   }
   .text-content {
     padding-top: .8rem;
