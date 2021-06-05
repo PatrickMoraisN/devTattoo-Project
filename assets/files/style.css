@@ -370,7 +370,7 @@ button {
 }
 
 .painel-container {
-  width: 40%;
+  width: 60%;
   background-color: white;
   box-shadow: 0 0 10px black;
   border-radius: 4px;
@@ -411,6 +411,7 @@ footer {
   align-items: center;
   color: whitesmoke;
   background: linear-gradient(rgb(39, 39, 39), rgb(26, 26, 26));
+  padding: 10px;
 }
 
 @keyframes seta{
@@ -462,7 +463,9 @@ footer {
   .text-content {
     padding: 0;
   }
-
+  .painel-container {
+    margin-top:30px;
+  }
   .navbar-menu {
     flex-direction: column;
    background-color: rgb(46, 46, 46);
@@ -519,5 +522,52 @@ footer {
 @media screen and (max-width: 700px) {
   .pictures{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .rating {
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .rating img {
+    width: 3rem;
+    height: auto;
+  }
+  .banner-content {
+    font-size: 2rem;
+  }
+  footer {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 510px){
+  .banner-content {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+  .titulo{
+    font-size: 2.6rem;
+  }
+  .text-content {
+    width: 80%;
+  }
+  .pictures img{
+    width: 14rem;
+    height: 14rem;
+  }
+  .text-galeria {
+    width: 100%;
+  }
+  .text-content {
+    padding-top: .8rem;
+    font-size: 1.4rem;
+  } 
+  .painel-container{
+    width: 80%;
+  }
+  .titulo-orcamento{
+    font-size: 2rem;
   }
 }
